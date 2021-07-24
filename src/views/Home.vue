@@ -28,15 +28,17 @@
           Обо мне
         </h2>
         <h3 class="about-preview__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Accusantium eius error incidunt obcaecati quas quia similique sunt.
+          Приветствую, дорогой читатель. Меня зовут Ардимасов Олег Иванович.
         </h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Eius natus nostrum quos? Beatae consequatur cum iste
-          necessitatibus ut! Atque id necessitatibus quae qui quo sequi sint.
-          Aperiam impedit iure magnam maxime, nesciunt nobis omnis,
-          optio quae quia sunt suscipit tenetur?
+          Я художник.<br>
+          Заслуженный деятель искусств России.<br>
+          Профессор МГХИ им. В.И. Сурикова.<br>
+          В 1953 г. окончил Иркутское художественное училище (преподаватель А.П. Жибинов).<br>
+          В 1958-1964 гг. учился в Московском Государственном Художественном Институте им В.И. Сурикова на факультете графики (мастерская профессора Кибрика Е.А.).<br>
+          Член Союза Художников СССР с 1970 г.<br>
+          Картины хранятся в ГМИИ им. А.С. Пушкина, Тульском художественном музее, Читинском художественном музее, Кемеровской областной картинной галерее.<br>
+          Узнать обо мне подробнее можно, нажав на кнопку ниже.<br>
         </p>
         <router-link to="/about" class="about-preview__link">моя биография</router-link>
       </div>
