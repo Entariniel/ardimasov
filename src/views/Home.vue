@@ -188,7 +188,6 @@ export default {
   content: '.';
   color: transparent;
   background: var(--bg-active-element);
-  visibility: none;
   opacity: 0;
   z-index: -1;
   transition: all .5s;

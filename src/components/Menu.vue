@@ -1,5 +1,5 @@
 <template>
-    <nav class="menu">
+    <nav class="menu" v-scroll="handleScroll">
       <ul class="menu__list">
         <li class="menu__item">
           <router-link to="/home" class="menu__link">Главная</router-link>
@@ -15,8 +15,35 @@
 </template>
 
 <script>
+
+import Vue from "vue";
+
+Vue.directive('scroll', {
+  inserted: function (el, binding) {
+    let f = function (evt) {
+      if (binding.value(evt, el)) {
+        window.removeEventListener('scroll', f)
+      }
+    }
+    window.addEventListener('scroll', f)
+  }
+})
+
 export default {
   name: "Menu",
+  methods: {
+    handleScroll: function (evt, el) {
+
+      if (window.scrollY > 107) {
+        el.classList.add('menu_fixed')
+
+      }
+      else if (window.scrollY <= 107 && el.classList.contains('menu_fixed')) {
+        el.classList.remove('menu_fixed')
+
+      }
+    }
+  },
 }
 </script>
 
@@ -33,6 +60,17 @@ export default {
   flex-direction: row;
   justify-content: center;
 
+
+}
+.menu_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px #2f2f2f;
+  transition: all .3s;
 }
 
 .menu__list {
@@ -43,7 +81,7 @@ export default {
 
 .menu__item  {
   display: inline-block;
-  margin: 0 4em;
+  margin: 0 2.5em;
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -66,21 +104,44 @@ export default {
   user-select: none;
 
   margin: 0.1em 0;
-  padding: 1.4em;
+  padding: 1.4em 3em;
   font-size: 1.1em;
   font-family: "BellotaBold", sans-serif;
   text-transform: uppercase;
+  z-index: 1;
 
   color: var(--font-color);
   text-decoration: none;
-  transition: .3s;
+  transition: all .5s;
 }
 
 .menu__link:hover {
-  color: var(--bg-active-element);
-  transition: .3s;
+  color: var(--bg-menu);
+  transition: all .5s;
+}
+.menu__link:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--font-color);
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.menu__link:hover:after{
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  transition: all .5s;
 }
 
-.menu__link:active {}
 
 </style>

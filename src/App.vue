@@ -1,5 +1,5 @@
 <template>
-  <div id="app"  @click.once="hide">
+  <div id="app"  @click.once="hide" >
     <Preview v-if="!isHidden" />
       <div  v-if="isHidden">
         <Header/>
@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     hide:  function () {
-      console.log("123")
       this.isHidden = !this.isHidden
       this.$router.push('/home').catch(() => { '/home' })
     }
