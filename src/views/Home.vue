@@ -25,7 +25,7 @@
       </div>
       <div class="about-preview__text-block">
         <h2 class="about-preview__heading">
-          Обо мне
+          О себе
         </h2>
         <h3 class="about-preview__subtitle">
           Приветствую, дорогой читатель. Меня зовут Ардимасов Олег Иванович.
@@ -92,7 +92,7 @@ export default {
 <style scoped>
 .home-slider  {
   background: #363237;
-  padding: 0 0 75px 0;
+
 }
 
 
@@ -160,7 +160,7 @@ export default {
     border: 4px  solid  var(--font-color);
     padding: 1em 1em;
     display: inline-block;
-    margin: 1em 0;
+    margin: 1em 0 0;
     font-family: "BellotaBold", sans-serif;
     font-weight: 800;
 

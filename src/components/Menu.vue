@@ -5,7 +5,7 @@
           <router-link to="/home" class="menu__link">Главная</router-link>
         </li>
         <li class="menu__item">
-          <router-link to="/about" class="menu__link">Обо мне</router-link>
+          <router-link to="/about" class="menu__link">О себе</router-link>
         </li>
         <li class="menu__item">
           <router-link to="/gallery" class="menu__link">Галерея</router-link>
@@ -103,8 +103,8 @@ export default {
   font-weight: 400;
   user-select: none;
 
-  margin: 0.1em 0;
-  padding: 1.4em 3em;
+  margin: 0;
+  padding: 1.3em 3em;
   font-size: 1.1em;
   font-family: "BellotaBold", sans-serif;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ export default {
 
   color: var(--font-color);
   text-decoration: none;
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .menu__link:hover {

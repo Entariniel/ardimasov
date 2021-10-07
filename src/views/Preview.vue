@@ -34,7 +34,7 @@ export default {
   height: 100%;
   background: #000000;
   -webkit-filter: opacity(45%);
-  filter:  opacity(45%);
+  filter:  opacity(35%);
   position: absolute;
 
 }

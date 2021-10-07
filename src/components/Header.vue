@@ -44,7 +44,5 @@ export default {
   user-select: none;
   font-family: "Segoe Print", sans-serif;
 }
-.header-bottom-line {
-  height: 75px;
-}
+
 </style>
