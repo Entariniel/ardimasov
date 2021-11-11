@@ -6,6 +6,7 @@ import Gallery from "./views/Gallery";
 import About from "./views/About";
 import Preview from "./views/Preview";
 
+
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)

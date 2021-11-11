@@ -1,6 +1,6 @@
 <template>
-    <nav class="menu" v-scroll="handleScroll">
-      <ul class="menu__list">
+    <nav class="menu " v-scroll="handleScroll">
+      <ul class="menu__list disableCaret">
         <li class="menu__item">
           <router-link to="/home" class="menu__link">Главная</router-link>
         </li>

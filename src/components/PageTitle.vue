@@ -51,7 +51,8 @@ export default {
 
 }
 .page-title__heading {
-  font-size: 60px;
+  font-size: 65px;
+  font-weight: bolder;
   z-index: 12;
   position: relative;
   margin: 0 0 10px;

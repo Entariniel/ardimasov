@@ -25,11 +25,12 @@ import Preview from "./views/Preview";
 import Header from "./components/Header";
 
 
+
 export default {
   name: 'App',
   components: {
      Preview,
-     Header
+     Header,
   },
   data() {
     return {
@@ -101,13 +102,23 @@ export default {
 * {
  box-sizing: border-box;
 }
+.disableCaret{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
 a {
   color: var(--font-color);
+  transition: 0.3s;
+  cursor:pointer;
 }
 a,
 a:hover,
 a:active {
   text-decoration: none;
+  transition: 0.3s;
+  cursor:pointer;
 }
 body {
   margin: 0;
@@ -116,6 +127,11 @@ body {
   height: 100vh;
   font-family: "Bellota-regular", sans-serif;
 }
+/*.container {*/
+/*  margin: 0 auto;*/
+/*  padding: 0 1em;*/
+/*  !*max-width: 1320px;*!*/
+/*}*/
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -166,8 +166,8 @@ export default {
 
     position:relative;
     z-index: 1;
-  text-transform: uppercase;
-  transition: all .5s;
+    text-transform: uppercase;
+    transition: all .5s;
 }
 
 .about-preview__link:hover {
