@@ -17,8 +17,9 @@
         </slide>
       </carousel>
     </div>
-    <div class="about-preview">
-      <div class="about-preview__image-block">
+    <div class="container">
+      <div class="about-preview">
+        <div class="about-preview__image-block">
         <div class="image-block__bg">
           <img src="../assets/self-portrait.jpg" alt="Автопортрет" class="image-block__image">
         </div>
@@ -42,6 +43,8 @@
         </p>
         <router-link to="/about" class="about-preview__link">моя биография</router-link>
       </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -95,6 +98,18 @@ export default {
 
 }
 
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 992px) {
+  
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
 
 .image-preview  {
   position: relative;
@@ -134,17 +149,17 @@ export default {
   /*background-size: contain;*/
 }
 .image-block__image {
-  width: 75%;
+  width: 85%;
 }
 
 .about-preview__text-block  {
   text-align: left;
-  padding-right: 6em;
+  padding-right: 3em;
   color: var(--bg-active-element)
 }
 .about-preview__heading {
   font-family: "BellotaBold", sans-serif;
-  font-size: 60px;
+  font-size: 4em;
   margin: 0 0 0.2em 0;
 }
 .about-preview__subtitle {

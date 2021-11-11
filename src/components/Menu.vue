@@ -1,5 +1,5 @@
 <template>
-    <nav class="menu " v-scroll="handleScroll">
+    <nav class="menu" v-scroll="handleScroll">
       <ul class="menu__list disableCaret">
         <li class="menu__item">
           <router-link to="/home" class="menu__link">Главная</router-link>
@@ -11,6 +11,7 @@
           <router-link to="/gallery" class="menu__link">Галерея</router-link>
         </li>
       </ul>
+      <button class="menu__open-button"><i class="fa fa-bars"></i></button>
     </nav>
 </template>
 
@@ -141,6 +142,27 @@ export default {
   visibility: visible;
   height: 100%;
   transition: all .5s;
+}
+.menu__open-button {
+  border: none;
+  background: transparent;
+  color: var(--font-color);
+  font-size: 2em;
+}
+
+@media (max-width: 1200px) {
+ 
+}
+@media (max-width: 992px) {
+ .menu__link {
+    padding: 1.3em 1.7em;
+ }
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
 }
 
 

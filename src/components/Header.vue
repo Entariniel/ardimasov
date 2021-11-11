@@ -45,4 +45,11 @@ export default {
   font-family: "Segoe Print", sans-serif;
 }
 
+@media (max-width: 992px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
+
 </style>

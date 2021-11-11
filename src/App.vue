@@ -91,6 +91,8 @@ export default {
   font-style: normal;
 }
 
+
+
 :root  {
   --font-color:  #d09683;
   --bg-button: #2d4262;
@@ -127,11 +129,11 @@ body {
   height: 100vh;
   font-family: "Bellota-regular", sans-serif;
 }
-/*.container {*/
-/*  margin: 0 auto;*/
-/*  padding: 0 1em;*/
-/*  !*max-width: 1320px;*!*/
-/*}*/
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1440px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import Gallery from "./views/Gallery";
 import About from "./views/About";
 import Preview from "./views/Preview";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 
 Vue.config.productionTip = false

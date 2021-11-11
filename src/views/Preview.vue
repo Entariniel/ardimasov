@@ -47,6 +47,7 @@ export default {
   z-index: 100;
   text-shadow: 3px 2px 6px #53524d;
   border: none;
+  line-height: 1.4;
   background: transparent;
   font-family: "Segoe Print", sans-serif;
   transition: .3s;
@@ -55,5 +56,17 @@ export default {
   text-shadow: 3px 2px 6px #666410;
   transition: .3s;
 }
+
+@media (max-width: 1200px) {
+  .preview__button {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 992px) {
+  .preview__button {
+    font-size: 3em;
+  }
+}
+
 
 </style>
