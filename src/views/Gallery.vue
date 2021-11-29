@@ -176,4 +176,40 @@ export default {
   transition: 0.5s;
 }
 
+@media (max-width: 1200px) {
+ 
+}
+@media (max-width: 992px) {
+  .gallery-block-container {
+    padding: 0 3em;
+  }
+  .gallery-block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8em;
+
+}
+}
+@media (max-width: 768px) {
+  .filter__category a{
+    font-size: 19px;
+    padding: 0.5em;
+  }
+  .gallery__filter {
+    margin-top: 3em;
+  }
+  .gallery-block-container {
+    padding: 0 2em;
+  }
+  .gallery-block{
+  grid-gap: 0.5em;
+  margin: 3em auto;
+
+  }
+}
+
+@media (max-width: 576px) {
+  
+}
+
 </style>

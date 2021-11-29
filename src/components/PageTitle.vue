@@ -83,6 +83,11 @@ export default {
   color: #ffffff;
   font-family: "BellotaBold", sans-serif;
 }
+@media (max-width: 768px) { 
+  .page-title__heading {
+    font-size: 58px;
+  }
+}
 
 
 </style>
