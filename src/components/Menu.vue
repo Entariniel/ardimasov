@@ -43,9 +43,10 @@ export default {
         el.classList.remove('menu_fixed')
 
       }
-    }
-  },
-}
+    },
+  }
+  }
+
 </script>
 
 <style scoped>
@@ -56,7 +57,7 @@ export default {
 
 
   transition: 0.3s ease;
-
+  height: 67px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -144,6 +145,7 @@ export default {
   transition: all .5s;
 }
 .menu__open-button {
+  display: none;
   border: none;
   background: transparent;
   color: var(--font-color);
@@ -154,12 +156,40 @@ export default {
  
 }
 @media (max-width: 992px) {
- .menu__link {
-    padding: 1.3em 1.7em;
+ .menu__item{
+   margin: 0 1.5em;
  }
 }
 @media (max-width: 768px) {
+   .menu {
+    justify-content: right;
+  }
+  .menu__item {
+    display: block;
+    margin: 0;
+  }
+ .menu__link {
+    padding: 1.3em 1.7em;
+    width: 100%;
+ }
+ .menu__list {
+    position: absolute;
+    transform: translate(250px);
+    top: 165px;
+    right: 0;
+    background: var(--bg-menu);
+    width: 250px;
+    z-index: 100;
+    box-shadow: 1px 3px 16px -8px #cacaca;
+ }
+ .menu_fixed > .menu__list {
+   top: 67px;
+ }
+ .menu__open-button {
+  display: inline-block;
   
+  
+}
 }
 @media (max-width: 576px) {
   

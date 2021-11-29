@@ -122,6 +122,10 @@ a:active {
   transition: 0.3s;
   cursor:pointer;
 }
+ul {
+  margin:0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
